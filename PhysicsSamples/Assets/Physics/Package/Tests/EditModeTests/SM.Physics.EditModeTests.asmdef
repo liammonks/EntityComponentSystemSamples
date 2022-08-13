@@ -1,0 +1,40 @@
+{
+    "name": "SM.Physics.EditModeTests",
+    "rootNamespace": "",
+    "references": [
+        "Unity.Burst",
+        "Unity.Collections",
+        "Unity.Entities",
+        "Unity.Entities.Hybrid",
+        "Unity.Mathematics",
+        "SM.Physics",
+        "SM.Physics.Editor",
+        "SM.Physics.Hybrid",
+        "SM.Physics.PlayModeTests",
+        "Unity.Scenes",
+        "Unity.Scenes.Hybrid",
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.unity.modules.physics",
+            "expression": "",
+            "define": "LEGACY_PHYSICS"
+        }
+    ],
+    "noEngineReferences": false
+}
