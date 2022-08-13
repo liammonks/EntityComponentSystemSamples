@@ -1,7 +1,7 @@
 using System;
 using NUnit.Framework;
 
-namespace Unity.Physics.Tests.Collision.Filter
+namespace SM.Physics.Tests.Collision.Filter
 {
     class FilterTests
     {

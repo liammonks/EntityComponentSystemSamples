@@ -3,7 +3,7 @@ using Unity.Mathematics;
 using UnityEditor;
 using UnityEngine;
 
-namespace Unity.Physics.Editor
+namespace SM.Physics.Editor
 {
     static class SceneViewUtility
     {

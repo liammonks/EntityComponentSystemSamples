@@ -2,9 +2,9 @@ using Unity.Collections;
 using NUnit.Framework;
 using Unity.Mathematics;
 using Random = Unity.Mathematics.Random;
-using static Unity.Physics.Math;
+using static SM.Physics.Math;
 
-namespace Unity.Physics.Tests.Joints
+namespace SM.Physics.Tests.Joints
 {
     /// <summary>
     /// These tests generate random motions and joints, simulate them for several steps, then verifies that the joint error is nearly zero.

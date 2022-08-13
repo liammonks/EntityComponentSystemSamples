@@ -3,10 +3,10 @@ using NUnit.Framework;
 using Unity.Mathematics;
 using Unity.Collections;
 using Random = Unity.Mathematics.Random;
-using static Unity.Physics.Math;
-using Unity.Physics.Tests.Utils;
+using static SM.Physics.Math;
+using SM.Physics.Tests.Utils;
 
-namespace Unity.Physics.Tests.Collision.Queries
+namespace SM.Physics.Tests.Collision.Queries
 {
     class QueryTests
     {

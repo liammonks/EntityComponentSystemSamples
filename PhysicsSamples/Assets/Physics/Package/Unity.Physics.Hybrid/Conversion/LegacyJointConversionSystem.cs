@@ -7,7 +7,7 @@ using Unity.Collections;
 using Unity.Entities;
 using Unity.Mathematics;
 using UnityEngine;
-using FloatRange = Unity.Physics.Math.FloatRange;
+using FloatRange = SM.Physics.Math.FloatRange;
 using LegacyCharacter = UnityEngine.CharacterJoint;
 using LegacyConfigurable = UnityEngine.ConfigurableJoint;
 using LegacyFixed = UnityEngine.FixedJoint;
@@ -15,7 +15,7 @@ using LegacyHinge = UnityEngine.HingeJoint;
 using LegacyJoint = UnityEngine.Joint;
 using LegacySpring = UnityEngine.SpringJoint;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     [AlwaysUpdateSystem]
     [UpdateAfter(typeof(BeginJointConversionSystem))]

@@ -2,7 +2,7 @@ using Unity.Entities;
 using Unity.Mathematics;
 using Unity.Transforms;
 
-namespace Unity.Physics.GraphicsIntegration
+namespace SM.Physics.GraphicsIntegration
 {
     /// <summary>
     /// A component to indicate that the graphical representation of a dynamic rigid body's motion should be smoothed when the rendering framerate is greater than the fixed step rate used by physics.

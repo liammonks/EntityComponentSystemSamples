@@ -1,8 +1,8 @@
 using Unity.Burst;
 using Unity.Mathematics;
-using static Unity.Physics.Math;
+using static SM.Physics.Math;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     // Solve data for a constraint that limits three degrees of angular freedom
     [NoAlias]

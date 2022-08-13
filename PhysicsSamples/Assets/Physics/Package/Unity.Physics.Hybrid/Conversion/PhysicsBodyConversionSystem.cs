@@ -1,8 +1,8 @@
 using Unity.Entities;
 using Unity.Mathematics;
-using Unity.Physics.GraphicsIntegration;
+using SM.Physics.GraphicsIntegration;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     [UpdateAfter(typeof(EndColliderConversionSystem))]
     public sealed class PhysicsBodyConversionSystem : GameObjectConversionSystem

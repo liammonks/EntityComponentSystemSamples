@@ -4,7 +4,7 @@ using Unity.Mathematics;
 using Unity.Entities;
 using Unity.Burst;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     // A collider representing a mesh comprised of triangles and quads.
     // Warning: This is just the header, it is followed by variable sized data in memory.

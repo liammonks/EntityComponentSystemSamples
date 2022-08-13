@@ -4,7 +4,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     interface ITagNames
     {

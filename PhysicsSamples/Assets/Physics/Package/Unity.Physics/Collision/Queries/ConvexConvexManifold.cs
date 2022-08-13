@@ -2,9 +2,9 @@ using System.Runtime.CompilerServices;
 using Unity.Burst;
 using Unity.Mathematics;
 using UnityEngine.Assertions;
-using static Unity.Physics.Math;
+using static SM.Physics.Math;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     // Low level convex-convex contact manifold query implementations
     internal static class ConvexConvexManifoldQueries

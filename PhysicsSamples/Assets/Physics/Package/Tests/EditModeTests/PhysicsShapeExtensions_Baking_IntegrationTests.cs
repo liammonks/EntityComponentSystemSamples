@@ -1,10 +1,10 @@
 using NUnit.Framework;
 using Unity.Collections;
 using Unity.Mathematics;
-using Unity.Physics.Authoring;
+using SM.Physics.Authoring;
 using UnityEngine;
 
-namespace Unity.Physics.Tests.Authoring
+namespace SM.Physics.Tests.Authoring
 {
     class PhysicsShapeExtensions_Baking_IntegrationTests
     {

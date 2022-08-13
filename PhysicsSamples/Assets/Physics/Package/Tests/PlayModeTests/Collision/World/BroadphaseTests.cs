@@ -8,7 +8,7 @@ using Unity.Transforms;
 using UnityEngine;
 using Assert = UnityEngine.Assertions.Assert;
 
-namespace Unity.Physics.Tests.Collision.PhysicsWorld
+namespace SM.Physics.Tests.Collision.PhysicsWorld
 {
     class BroadPhaseTests
     {

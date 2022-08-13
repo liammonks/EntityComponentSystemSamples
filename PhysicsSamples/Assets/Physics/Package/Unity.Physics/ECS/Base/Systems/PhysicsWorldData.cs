@@ -3,7 +3,7 @@ using Unity.Collections;
 using Unity.Entities;
 using Unity.Transforms;
 
-namespace Unity.Physics.Systems
+namespace SM.Physics.Systems
 {
     /// <summary>
     /// Structure containing PhysicsWorld and other data and queries that are necessary for simulating a physics world.

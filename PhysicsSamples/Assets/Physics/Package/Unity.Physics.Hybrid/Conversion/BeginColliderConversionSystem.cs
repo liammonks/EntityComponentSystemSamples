@@ -1,7 +1,7 @@
 using Unity.Collections;
 using Unity.Entities;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     [AlwaysUpdateSystem]
     public sealed class BeginColliderConversionSystem : GameObjectConversionSystem

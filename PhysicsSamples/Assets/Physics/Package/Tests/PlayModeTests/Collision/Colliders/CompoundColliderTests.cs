@@ -4,9 +4,9 @@ using NUnit.Framework;
 using Unity.Collections;
 using Unity.Entities;
 using Unity.Mathematics;
-using Unity.Physics.Tests.Utils;
+using SM.Physics.Tests.Utils;
 
-namespace Unity.Physics.Tests.Collision.Colliders
+namespace SM.Physics.Tests.Collision.Colliders
 {
     /// <summary>
     /// Test class containing tests for the <see cref="CompoundCollider"/>

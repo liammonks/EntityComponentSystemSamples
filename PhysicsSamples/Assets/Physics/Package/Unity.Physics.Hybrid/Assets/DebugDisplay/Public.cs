@@ -40,9 +40,9 @@ namespace Unity.DebugDisplay
             m_Lines.Draw(X0, X1, color);
 
             float3 dir;
-            float length = Physics.Math.NormalizeWithLength(v, out dir);
+            float length = SM.Physics.Math.NormalizeWithLength(v, out dir);
             float3 perp, perp2;
-            Physics.Math.CalculatePerpendicularNormalized(dir, out perp, out perp2);
+            SM.Physics.Math.CalculatePerpendicularNormalized(dir, out perp, out perp2);
             float3 scale = length * 0.2f;
 
             m_Lines.Draw(X1, X1 + (perp - dir) * scale, color);
@@ -80,9 +80,9 @@ namespace Unity.DebugDisplay
             m_Lines.Draw(X0, X1, color);
 
             float3 dir;
-            float length = Physics.Math.NormalizeWithLength(v, out dir);
+            float length = SM.Physics.Math.NormalizeWithLength(v, out dir);
             float3 perp, perp2;
-            Physics.Math.CalculatePerpendicularNormalized(dir, out perp, out perp2);
+            SM.Physics.Math.CalculatePerpendicularNormalized(dir, out perp, out perp2);
             float3 scale = length * 0.2f;
 
             m_Lines.Draw(X1, X1 + (perp - dir) * scale, color);
@@ -216,11 +216,11 @@ namespace Unity.DebugDisplay
         internal void Draw(float3 point, float3 axis, float angle, Unity.DebugDisplay.ColorIndex color)
         {
             float3 dir;
-            float scale = Physics.Math.NormalizeWithLength(axis, out dir);
+            float scale = SM.Physics.Math.NormalizeWithLength(axis, out dir);
             float3 arm;
             {
                 float3 perp1, perp2;
-                Physics.Math.CalculatePerpendicularNormalized(dir, out perp1, out perp2);
+                SM.Physics.Math.CalculatePerpendicularNormalized(dir, out perp1, out perp2);
                 arm = math.mul(quaternion.AxisAngle(perp1, angle), dir) * scale;
             }
             quaternion q = quaternion.AxisAngle(dir, 2.0f * (float)math.PI / res);

@@ -6,9 +6,9 @@ using Unity.Collections.LowLevel.Unsafe;
 using Unity.Entities;
 using Unity.Jobs;
 using Unity.Mathematics;
-using Unity.Physics.Systems;
+using SM.Physics.Systems;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     // A system which draws all contact points produced by the physics step system
     [UpdateInGroup(typeof(FixedStepSimulationSystemGroup))]

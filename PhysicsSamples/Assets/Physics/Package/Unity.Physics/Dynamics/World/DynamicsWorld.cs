@@ -3,7 +3,7 @@ using Unity.Burst;
 using Unity.Collections;
 using Unity.Entities;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     // A collection of motion information used during physics simulation.
     [NoAlias]

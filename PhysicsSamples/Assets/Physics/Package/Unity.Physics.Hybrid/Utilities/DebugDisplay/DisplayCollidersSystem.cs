@@ -1,12 +1,12 @@
 using System;
 using System.Collections.Generic;
-using Unity.Physics.Systems;
+using SM.Physics.Systems;
 using Unity.Collections;
 using Unity.Entities;
 using Unity.Mathematics;
 using UnityEngine;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     /// A system to display debug geometry for all body colliders
     [UpdateInGroup(typeof(FixedStepSimulationSystemGroup))]

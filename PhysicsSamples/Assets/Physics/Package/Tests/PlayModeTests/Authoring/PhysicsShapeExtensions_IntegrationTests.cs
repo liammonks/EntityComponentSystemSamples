@@ -1,14 +1,14 @@
 using System;
 using NUnit.Framework;
 using Unity.Entities;
-using Unity.Physics.Authoring;
+using SM.Physics.Authoring;
 using UnityEngine;
 #if LEGACY_PHYSICS
 using LegacyBox = UnityEngine.BoxCollider;
 using LegacyRigidBody = UnityEngine.Rigidbody;
 #endif
 
-namespace Unity.Physics.Tests.Authoring
+namespace SM.Physics.Tests.Authoring
 {
     class PhysicsShapeExtensions_IntegrationTests : BaseHierarchyConversionTest
     {

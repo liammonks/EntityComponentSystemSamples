@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     sealed class EnumFlagsAttribute : PropertyAttribute {}
     sealed class ExpandChildrenAttribute : PropertyAttribute {}

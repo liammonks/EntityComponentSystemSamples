@@ -1,7 +1,7 @@
 using Unity.Mathematics;
 using Unity.Transforms;
 
-namespace Unity.Physics.Extensions
+namespace SM.Physics.Extensions
 {
     /// <summary>
     /// Different ways to apply changes to a rigid body's velocity.

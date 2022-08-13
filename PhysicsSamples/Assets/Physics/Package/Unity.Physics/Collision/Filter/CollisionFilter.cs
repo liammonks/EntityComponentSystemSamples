@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using Unity.Mathematics;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     // Describes which other objects an object can collide with.
     [DebuggerDisplay("Group: {GroupIndex} BelongsTo: {BelongsTo} CollidesWith: {CollidesWith}")]

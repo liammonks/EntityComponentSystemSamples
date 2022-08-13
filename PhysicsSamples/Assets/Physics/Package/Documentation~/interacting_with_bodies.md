@@ -12,7 +12,7 @@ First you need to make a `ComponentSystem` that is going to iterate over all bod
 ```csharp
 using Unity.Entities;
 using Unity.Transforms;
-using Unity.Physics;
+using SM.Physics;
 using Unity.Mathematics;
 using UnityEngine;
 
@@ -82,13 +82,13 @@ The Sphere should orbit the point in space where you placed the new GameObject. 
 
 The correct DOTS oriented way would be to use the `IConvertGameObjectToEntity` interface on the `AttractComponent` MonoBehaviour we made. This can be done by implementing `IConvertGameObjectToEntity.Convert` which would create an `AttractData` component of the `ComponentData` type that is attached to the Entity representing the point of attraction. Then modify the `AttractSystem` to iterate over all the `AttractData` components instead.
 
-The most efficient way to get all the bodies close to that point is to either use the `Unity.Physics.CollisionWorld.OverlapAabb` method or, for more accuracy, `CalculateDistance` (with its `MaxDistance` set to the `maxDistance` defined in the above example). For more information, see the [Collision queries](collision_queries.md) section.
+The most efficient way to get all the bodies close to that point is to either use the `SM.Physics.CollisionWorld.OverlapAabb` method or, for more accuracy, `CalculateDistance` (with its `MaxDistance` set to the `maxDistance` defined in the above example). For more information, see the [Collision queries](collision_queries.md) section.
 
 ## Impulses
 
 Now you have seen how to alter velocity in code, but it can be tricky to work out what velocity values to set in order to get a desired outcome. A common thing you want to do is applying an impulse at a given point on the body and having it react – for example, shooting the object with a gun.
 
-Unity Physics provides a few `Unity.Physics.Extensions.ComponentExtensions` methods to do the math for you, for example `ApplyImpulse()`. Here's its current implementation:
+Unity Physics provides a few `SM.Physics.Extensions.ComponentExtensions` methods to do the math for you, for example `ApplyImpulse()`. Here's its current implementation:
 
 ```csharp
     public static void ApplyImpulse(ref PhysicsVelocity pv, PhysicsMass pm,
@@ -142,10 +142,10 @@ First, you need these namespaces for your script:
 ```csharp
 using Unity.Entities;
 using Unity.Mathematics;
-using Unity.Physics;
+using SM.Physics;
 using Unity.Rendering;
 using Unity.Transforms;
-using Collider = Unity.Physics.Collider;
+using Collider = SM.Physics.Collider;
 ```
 
 Here's the method for creating bodies:
@@ -210,7 +210,7 @@ Getting your `RenderMesh` (etc.) is up to you, and you can create a Collider thr
   public Entity CreateDynamicSphere(RenderMesh displayMesh, float radius, float3 position, quaternion orientation)
     {
         // Sphere with default filter and material. Add to Create() call if you want non default:
-        BlobAssetReference<Unity.Physics.Collider> spCollider = Unity.Physics.SphereCollider.Create(float3.zero, radius);
+        BlobAssetReference<SM.Physics.Collider> spCollider = SM.Physics.SphereCollider.Create(float3.zero, radius);
         return CreateBody(displayMesh, position, orientation, spCollider, float3.zero, float3.zero, 1.0f, true);
     };
 ```

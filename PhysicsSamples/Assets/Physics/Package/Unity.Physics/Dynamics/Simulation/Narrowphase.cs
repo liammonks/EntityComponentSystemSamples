@@ -2,7 +2,7 @@ using Unity.Burst;
 using Unity.Collections;
 using Unity.Jobs;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     // Processes body pairs and creates contacts from them
     public static class NarrowPhase

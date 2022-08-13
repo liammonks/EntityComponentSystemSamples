@@ -1,8 +1,8 @@
 using UnityEngine;
 using Unity.Entities;
-using Unity.Physics.GraphicsIntegration;
+using SM.Physics.GraphicsIntegration;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     [AddComponentMenu("DOTS/Physics/Physics Render Entity")]
     [HelpURL(HelpURLs.PhysicsRenderEntityAuthoring)]

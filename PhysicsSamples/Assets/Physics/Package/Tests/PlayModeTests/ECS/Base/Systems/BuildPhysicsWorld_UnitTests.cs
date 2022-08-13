@@ -1,9 +1,9 @@
 using NUnit.Framework;
 using Unity.Entities;
 using Unity.Mathematics;
-using Unity.Physics.Systems;
+using SM.Physics.Systems;
 
-namespace Unity.Physics.Tests.Systems
+namespace SM.Physics.Tests.Systems
 {
     class BuildPhysicsWorld_UnitTests
     {

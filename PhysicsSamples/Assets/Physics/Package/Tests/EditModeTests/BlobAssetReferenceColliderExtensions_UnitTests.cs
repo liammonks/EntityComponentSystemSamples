@@ -6,11 +6,11 @@ using Unity.Collections.LowLevel.Unsafe;
 using Unity.Entities;
 using Unity.Jobs;
 using Unity.Mathematics;
-using Unity.Physics.Authoring;
-using Unity.Physics.Extensions;
+using SM.Physics.Authoring;
+using SM.Physics.Extensions;
 using UnityEngine;
 
-namespace Unity.Physics.Tests.Authoring
+namespace SM.Physics.Tests.Authoring
 {
     [TestFixture(typeof(BoxCollider), typeof(SphereCollider))]
     [TestFixture(typeof(CylinderCollider), typeof(BoxCollider))]

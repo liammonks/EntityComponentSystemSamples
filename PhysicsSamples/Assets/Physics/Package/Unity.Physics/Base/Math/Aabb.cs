@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using Unity.Mathematics;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     // An axis aligned bounding box
     [DebuggerDisplay("{Min} - {Max}")]

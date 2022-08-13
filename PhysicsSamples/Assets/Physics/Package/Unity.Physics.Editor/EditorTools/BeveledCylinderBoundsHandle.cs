@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEditor.IMGUI.Controls;
 using UnityEngine;
 
-namespace Unity.Physics.Editor
+namespace SM.Physics.Editor
 {
     class BeveledCylinderBoundsHandle : PrimitiveBoundsHandle
     {

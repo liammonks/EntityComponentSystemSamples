@@ -5,7 +5,7 @@ using Unity.Entities;
 using Unity.Jobs;
 using Unity.Transforms;
 
-namespace Unity.Physics.Systems
+namespace SM.Physics.Systems
 {
     // A system which builds the physics world based on the entity world.
     // The world will contain a rigid body for every entity which has a rigid body component,

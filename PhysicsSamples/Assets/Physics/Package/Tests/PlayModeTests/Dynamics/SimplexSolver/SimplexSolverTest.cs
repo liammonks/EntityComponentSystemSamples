@@ -1,10 +1,10 @@
 using System;
 using NUnit.Framework;
 using Unity.Mathematics;
-using static Unity.Physics.SimplexSolver;
+using static SM.Physics.SimplexSolver;
 using Assert = UnityEngine.Assertions.Assert;
 
-namespace Unity.Physics.Tests.Dynamics.SimplexSolver
+namespace SM.Physics.Tests.Dynamics.SimplexSolver
 {
     // Tests to validate simplex solver implementation
     class SimplexSolverTests

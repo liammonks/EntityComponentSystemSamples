@@ -1,7 +1,7 @@
 using Unity.Mathematics;
-using FloatRange = Unity.Physics.Math.FloatRange;
+using FloatRange = SM.Physics.Math.FloatRange;
 
-namespace Unity.Physics.Extensions
+namespace SM.Physics.Extensions
 {
     /// <summary>
     /// Extension methods for working with <see cref="PhysicsJoint"/>.

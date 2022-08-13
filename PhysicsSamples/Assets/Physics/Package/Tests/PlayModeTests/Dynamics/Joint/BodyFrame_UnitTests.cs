@@ -1,7 +1,7 @@
 using NUnit.Framework;
 using Unity.Mathematics;
 
-namespace Unity.Physics.Tests.Joints
+namespace SM.Physics.Tests.Joints
 {
     class BodyFrame_UnitTests
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     [CreateAssetMenu(menuName = "DOTS/Physics/Physics Category Names", fileName = "Physics Category Names")]
     [HelpURL(HelpURLs.PhysicsCategoryNames)]

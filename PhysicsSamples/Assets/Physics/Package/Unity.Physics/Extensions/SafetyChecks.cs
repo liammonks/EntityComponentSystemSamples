@@ -5,18 +5,18 @@ using Unity.Collections;
 using Unity.Entities;
 using Unity.Mathematics;
 
-[assembly: RegisterGenericComponentType(typeof(Unity.Physics.DummyColliderFakesComponent<Unity.Physics.Collider>))]
-[assembly: RegisterGenericComponentType(typeof(Unity.Physics.DummyColliderFakesComponent<Unity.Physics.BoxCollider>))]
-[assembly: RegisterGenericComponentType(typeof(Unity.Physics.DummyColliderFakesComponent<Unity.Physics.CapsuleCollider>))]
-[assembly: RegisterGenericComponentType(typeof(Unity.Physics.DummyColliderFakesComponent<Unity.Physics.CylinderCollider>))]
-[assembly: RegisterGenericComponentType(typeof(Unity.Physics.DummyColliderFakesComponent<Unity.Physics.SphereCollider>))]
-[assembly: RegisterGenericComponentType(typeof(Unity.Physics.DummyColliderFakesComponent<Unity.Physics.PolygonCollider>))]
-[assembly: RegisterGenericComponentType(typeof(Unity.Physics.DummyColliderFakesComponent<Unity.Physics.ConvexCollider>))]
-[assembly: RegisterGenericComponentType(typeof(Unity.Physics.DummyColliderFakesComponent<Unity.Physics.MeshCollider>))]
-[assembly: RegisterGenericComponentType(typeof(Unity.Physics.DummyColliderFakesComponent<Unity.Physics.CompoundCollider>))]
-[assembly: RegisterGenericComponentType(typeof(Unity.Physics.DummyColliderFakesComponent<Unity.Physics.TerrainCollider>))]
+[assembly: RegisterGenericComponentType(typeof(SM.Physics.DummyColliderFakesComponent<SM.Physics.Collider>))]
+[assembly: RegisterGenericComponentType(typeof(SM.Physics.DummyColliderFakesComponent<SM.Physics.BoxCollider>))]
+[assembly: RegisterGenericComponentType(typeof(SM.Physics.DummyColliderFakesComponent<SM.Physics.CapsuleCollider>))]
+[assembly: RegisterGenericComponentType(typeof(SM.Physics.DummyColliderFakesComponent<SM.Physics.CylinderCollider>))]
+[assembly: RegisterGenericComponentType(typeof(SM.Physics.DummyColliderFakesComponent<SM.Physics.SphereCollider>))]
+[assembly: RegisterGenericComponentType(typeof(SM.Physics.DummyColliderFakesComponent<SM.Physics.PolygonCollider>))]
+[assembly: RegisterGenericComponentType(typeof(SM.Physics.DummyColliderFakesComponent<SM.Physics.ConvexCollider>))]
+[assembly: RegisterGenericComponentType(typeof(SM.Physics.DummyColliderFakesComponent<SM.Physics.MeshCollider>))]
+[assembly: RegisterGenericComponentType(typeof(SM.Physics.DummyColliderFakesComponent<SM.Physics.CompoundCollider>))]
+[assembly: RegisterGenericComponentType(typeof(SM.Physics.DummyColliderFakesComponent<SM.Physics.TerrainCollider>))]
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     //TODO: collect all other defines in the codebase here and move to it's own file
     static class CompilationSymbols

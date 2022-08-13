@@ -7,9 +7,9 @@ using Unity.Jobs;
 using Unity.Jobs.LowLevel.Unsafe;
 using Unity.Mathematics;
 using UnityEngine.Assertions;
-using static Unity.Physics.BoundingVolumeHierarchy;
+using static SM.Physics.BoundingVolumeHierarchy;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     // A bounding volume around a collection of rigid bodies
     [NoAlias]

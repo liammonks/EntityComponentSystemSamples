@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 using Unity.Mathematics;
 using UnityEngine.Assertions;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     // Common math helper functions
     [DebuggerStepThrough]

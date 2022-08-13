@@ -1,6 +1,6 @@
 using System;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     class PreserveAttribute : Attribute {}
 

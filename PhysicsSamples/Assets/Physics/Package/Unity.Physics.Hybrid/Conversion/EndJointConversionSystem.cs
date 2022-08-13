@@ -3,7 +3,7 @@ using Unity.Collections;
 using Unity.Entities;
 using UnityComponent = UnityEngine.Component;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     /// <summary>
     /// A system that is updated after all built-in conversion systems that produce <see cref="PhysicsJoint"/>.
@@ -93,7 +93,7 @@ namespace Unity.Physics.Authoring
             for (var i = 0; i < joints.Length; ++i)
             {
                 uint worldIndex = DstEntityManager.GetSharedComponentData<PhysicsWorldIndex>(constrainedBodyPair.EntityA).Value;
-                Assertions.Assert.AreEqual(
+                Unity.Assertions.Assert.AreEqual(
                     worldIndex,
                     constrainedBodyPair.EntityB == Entity.Null ? worldIndex : DstEntityManager.GetSharedComponentData<PhysicsWorldIndex>(constrainedBodyPair.EntityB).Value);
 

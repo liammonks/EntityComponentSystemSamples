@@ -2,7 +2,7 @@ using System.Runtime.CompilerServices;
 using Unity.Entities;
 using Unity.Mathematics;
 
-namespace Unity.Physics.Extensions
+namespace SM.Physics.Extensions
 {
     // Utility functions acting on a physics world
     public static class PhysicsWorldExtensions

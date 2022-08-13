@@ -4,7 +4,7 @@ using Unity.Collections.LowLevel.Unsafe;
 using Unity.Entities;
 using Unity.Mathematics;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     public struct CapsuleGeometry : IEquatable<CapsuleGeometry>
     {

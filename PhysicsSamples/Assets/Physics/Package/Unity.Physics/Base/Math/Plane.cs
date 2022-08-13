@@ -2,7 +2,7 @@ using System.Runtime.CompilerServices;
 using System.Diagnostics;
 using Unity.Mathematics;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     // A plane described by a normal and a distance from the origin
     [DebuggerDisplay("{Normal}, {Distance}")]

@@ -5,7 +5,7 @@ using Unity.Collections.LowLevel.Unsafe;
 using Unity.Jobs;
 using Unity.Mathematics;
 
-namespace Unity.Physics.Tests.Collision.Colliders
+namespace SM.Physics.Tests.Collision.Colliders
 {
     class CylinderColliderTests
     {

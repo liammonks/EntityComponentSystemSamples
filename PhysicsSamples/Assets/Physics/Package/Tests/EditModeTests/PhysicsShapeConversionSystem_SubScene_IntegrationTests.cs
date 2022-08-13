@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 using NUnit.Framework;
 using Unity.Collections;
 using Unity.Entities;
-using Unity.Physics.Authoring;
+using SM.Physics.Authoring;
 using Unity.Scenes;
 using UnityEditor;
 using UnityEditor.SceneManagement;
@@ -16,7 +16,7 @@ using UnityMesh = UnityEngine.Mesh;
 using LegacyMeshCollider = UnityEngine.MeshCollider;
 #endif
 
-namespace Unity.Physics.Tests.Authoring
+namespace SM.Physics.Tests.Authoring
 {
     // mirrors some functionality in SubSceneConversionTests
     class PhysicsShapeConversionSystem_SubScene_IntegrationTests

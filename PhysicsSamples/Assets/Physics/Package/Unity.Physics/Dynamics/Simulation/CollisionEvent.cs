@@ -3,7 +3,7 @@ using Unity.Collections.LowLevel.Unsafe;
 using Unity.Entities;
 using Unity.Mathematics;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     // An event raised when a pair of bodies have collided during solving.
     public struct CollisionEvent : ISimulationEvent<CollisionEvent>

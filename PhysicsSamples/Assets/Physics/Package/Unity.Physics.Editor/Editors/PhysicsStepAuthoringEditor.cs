@@ -1,8 +1,8 @@
-using Unity.Physics.Authoring;
+using SM.Physics.Authoring;
 using UnityEditor;
 using UnityEngine;
 
-namespace Unity.Physics.Editor
+namespace SM.Physics.Editor
 {
     [CustomEditor(typeof(PhysicsStepAuthoring))]
     [CanEditMultipleObjects]

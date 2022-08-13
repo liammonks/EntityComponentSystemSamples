@@ -6,12 +6,12 @@ using Unity.Collections.LowLevel.Unsafe;
 using Unity.Jobs;
 using Unity.Mathematics;
 using Unity.PerformanceTesting;
-using static Unity.Physics.BoundingVolumeHierarchy;
-using static Unity.Physics.BoundingVolumeHierarchy.Builder;
+using static SM.Physics.BoundingVolumeHierarchy;
+using static SM.Physics.BoundingVolumeHierarchy.Builder;
 using Assert = UnityEngine.Assertions.Assert;
 using Random = UnityEngine.Random;
 
-namespace Unity.Physics.Tests.Collision.Geometry
+namespace SM.Physics.Tests.Collision.Geometry
 {
     class BoundingVolumeHierarchyBuilderTests
     {

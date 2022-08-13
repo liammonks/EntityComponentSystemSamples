@@ -1,6 +1,6 @@
 #if LEGACY_PHYSICS
 using Unity.Entities;
-using Unity.Physics.GraphicsIntegration;
+using SM.Physics.GraphicsIntegration;
 using UnityEngine;
 using LegacyRigidBody = UnityEngine.Rigidbody;
 using LegacyCollider = UnityEngine.Collider;
@@ -9,7 +9,7 @@ using LegacyCapsule = UnityEngine.CapsuleCollider;
 using LegacyMesh = UnityEngine.MeshCollider;
 using LegacySphere = UnityEngine.SphereCollider;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     [UpdateAfter(typeof(PhysicsBodyConversionSystem))]
     public sealed class LegacyRigidbodyConversionSystem : GameObjectConversionSystem

@@ -1,7 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace Unity.Physics.Editor
+namespace SM.Physics.Editor
 {
     abstract class BaseDrawer : PropertyDrawer
     {

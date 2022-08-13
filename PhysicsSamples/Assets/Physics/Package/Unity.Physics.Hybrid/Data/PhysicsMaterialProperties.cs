@@ -2,7 +2,7 @@ using System;
 using Unity.Mathematics;
 using UnityEngine;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     interface IPhysicsMaterialProperties
     {

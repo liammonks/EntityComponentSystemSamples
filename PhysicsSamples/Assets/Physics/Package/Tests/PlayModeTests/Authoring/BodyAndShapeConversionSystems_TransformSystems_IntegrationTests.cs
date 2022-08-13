@@ -3,7 +3,7 @@ using System.Linq;
 using NUnit.Framework;
 using Unity.Collections;
 using Unity.Entities;
-using Unity.Physics.Authoring;
+using SM.Physics.Authoring;
 using Unity.Transforms;
 using UnityEngine;
 #if LEGACY_PHYSICS
@@ -11,7 +11,7 @@ using LegacyBox = UnityEngine.BoxCollider;
 using LegacyRigidBody = UnityEngine.Rigidbody;
 #endif
 
-namespace Unity.Physics.Tests.Authoring
+namespace SM.Physics.Tests.Authoring
 {
     class BodyAndShapeConversionSystems_TransformSystems_IntegrationTests : BaseHierarchyConversionTest
     {

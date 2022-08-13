@@ -2,7 +2,7 @@
 using Unity.Burst;
 using Unity.DataFlowGraph;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     /// <summary>
     /// DataFlowGraph node that performs a Collider Cast query on a CollisionWorld.

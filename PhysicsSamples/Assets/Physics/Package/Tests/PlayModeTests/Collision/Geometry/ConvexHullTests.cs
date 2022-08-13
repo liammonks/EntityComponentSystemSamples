@@ -4,7 +4,7 @@ using Unity.Mathematics;
 using Unity.Collections;
 using UnityEngine;
 
-namespace Unity.Physics.Tests.Collision.Geometry
+namespace SM.Physics.Tests.Collision.Geometry
 {
     class ConvexHullTests
     {

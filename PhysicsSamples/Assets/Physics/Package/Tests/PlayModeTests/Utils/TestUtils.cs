@@ -9,7 +9,7 @@ using Unity.Collections;
 using Unity.Jobs;
 using Random = Unity.Mathematics.Random;
 
-namespace Unity.Physics.Tests
+namespace SM.Physics.Tests
 {
     static class TestExtensions
     {
@@ -147,7 +147,7 @@ namespace Unity.Physics.Tests
     }
 }
 
-namespace Unity.Physics.Tests.Utils
+namespace SM.Physics.Tests.Utils
 {
     class TestUtils
     {

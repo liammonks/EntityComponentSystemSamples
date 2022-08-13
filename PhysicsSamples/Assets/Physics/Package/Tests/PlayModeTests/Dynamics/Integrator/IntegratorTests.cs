@@ -4,7 +4,7 @@ using Unity.Mathematics;
 using UnityEngine;
 using Assert = UnityEngine.Assertions.Assert;
 
-namespace Unity.Physics.Tests.Dynamics.Integrator
+namespace SM.Physics.Tests.Dynamics.Integrator
 {
     class IntegratorTests
     {
@@ -26,7 +26,7 @@ namespace Unity.Physics.Tests.Dynamics.Integrator
             var angularVelocity = new float3(1.0f, 2.0f, 3.0f);
             float timestep = 4.0f;
 
-            var orientation = Unity.Physics.Integrator.IntegrateAngularVelocity(angularVelocity, timestep);
+            var orientation = SM.Physics.Integrator.IntegrateAngularVelocity(angularVelocity, timestep);
 
             Assert.AreEqual(new quaternion(2.0f, 4.0f, 6.0f, 1.0f), orientation);
         }

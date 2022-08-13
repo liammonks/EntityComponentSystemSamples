@@ -1,9 +1,9 @@
 using System;
 using NUnit.Framework;
 using Unity.Mathematics;
-using Unity.Physics.Authoring;
+using SM.Physics.Authoring;
 
-namespace Unity.Physics.Tests.Authoring
+namespace SM.Physics.Tests.Authoring
 {
     class PhysicsShapeExtensions_UnitTests
     {

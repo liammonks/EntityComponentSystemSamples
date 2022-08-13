@@ -4,7 +4,7 @@ using Unity.Mathematics;
 using UnityEngine;
 using Assert = UnityEngine.Assertions.Assert;
 
-namespace Unity.Physics.Tests.Collision.PhysicsWorld
+namespace SM.Physics.Tests.Collision.PhysicsWorld
 {
     class CollisionWorldTests
     {
@@ -56,7 +56,7 @@ namespace Unity.Physics.Tests.Collision.PhysicsWorld
         {
             for (int numThreads = 0; numThreads <= 1; numThreads++)
             {
-                Unity.Physics.PhysicsWorld world = BroadPhaseTests.createTestWorld(1);
+                SM.Physics.PhysicsWorld world = BroadPhaseTests.createTestWorld(1);
                 BroadPhaseTests.addStaticBoxToWorld(world, 0, Vector3.zero, quaternion.identity, new Vector3(10, .1f, 10));
                 Unity.Jobs.JobHandle handle = new Unity.Jobs.JobHandle();
                 Unity.Jobs.JobHandle worldJobHandle = world.CollisionWorld.ScheduleUpdateDynamicTree(ref world, 1 / 60, -9.81f * math.up(), handle, numThreads == 1);
@@ -70,7 +70,7 @@ namespace Unity.Physics.Tests.Collision.PhysicsWorld
         [Test]
         public void UpdateWorldOneStaticBoxTest()
         {
-            Unity.Physics.PhysicsWorld world = BroadPhaseTests.createTestWorld(1);
+            SM.Physics.PhysicsWorld world = BroadPhaseTests.createTestWorld(1);
             BroadPhaseTests.addStaticBoxToWorld(world, 0, Vector3.zero, quaternion.identity, new Vector3(10, .1f, 10));
             world.CollisionWorld.UpdateDynamicTree(ref world, 1 / 60, -9.81f * math.up());
             world.Dispose();

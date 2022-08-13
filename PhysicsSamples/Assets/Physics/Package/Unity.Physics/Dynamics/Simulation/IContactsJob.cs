@@ -6,7 +6,7 @@ using Unity.Jobs;
 using Unity.Jobs.LowLevel.Unsafe;
 using Unity.Mathematics;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     // INTERNAL UnityPhysics interface for jobs that iterate through the list of contact manifolds produced by the narrow phase
     // Important: Only use inside UnityPhysics code! Jobs in other projects should implement IContactsJob.

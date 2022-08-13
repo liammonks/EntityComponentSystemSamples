@@ -7,7 +7,7 @@ using Unity.PerformanceTesting;
 using Assert = UnityEngine.Assertions.Assert;
 using Random = UnityEngine.Random;
 
-namespace Unity.Physics.Tests.PerformanceTests
+namespace SM.Physics.Tests.PerformanceTests
 {
     class RadixSortTests
     {

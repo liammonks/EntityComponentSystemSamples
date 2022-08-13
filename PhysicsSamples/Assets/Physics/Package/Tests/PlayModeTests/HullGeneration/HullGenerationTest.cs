@@ -1,16 +1,16 @@
 using Unity.Entities;
 using Unity.Mathematics;
 using UnityEngine;
-using Unity.Physics;
+using SM.Physics;
 using Unity.Collections;
 using System.Collections.Generic;
 using Unity.Collections.LowLevel.Unsafe;
 using UnityEditor;
 using Unity.Jobs;
 using Unity.Burst;
-using Collider = Unity.Physics.Collider;
+using Collider = SM.Physics.Collider;
 using UnityEngine.Assertions;
-using Material = Unity.Physics.Material;
+using Material = SM.Physics.Material;
 
 #region Point clouds
 
@@ -571,7 +571,7 @@ class HullGenerationTest : MonoBehaviour
     }
 
     // Finds the distance from each vertex of hull to collider and returns some stats
-    unsafe void CalcHullDistanceStats(ref ConvexHull hull, Unity.Physics.ConvexCollider* collider, float extraRadius, ref float minDistance, ref float maxDistance)
+    unsafe void CalcHullDistanceStats(ref ConvexHull hull, SM.Physics.ConvexCollider* collider, float extraRadius, ref float minDistance, ref float maxDistance)
     {
         for (int i = 0; i < hull.Vertices.Length; i++)
         {
@@ -677,7 +677,7 @@ class HullGenerationTest : MonoBehaviour
         for (int i = 0; i < simplifiedHull.NumFaces; i++)
         {
             ConvexHull.Face face = simplifiedHull.Faces[i];
-            Unity.Physics.Plane plane = simplifiedHull.Planes[i];
+            SM.Physics.Plane plane = simplifiedHull.Planes[i];
             for (int j = 0; j < face.NumVertices; j++)
             {
                 float3 vertex = simplifiedHull.Vertices[simplifiedHull.FaceVertexIndices[face.FirstIndex + j]];

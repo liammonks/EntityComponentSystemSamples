@@ -2,7 +2,7 @@ using System;
 using Unity.Collections;
 using Unity.Mathematics;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     public static class ConvexHullGenerationParametersExtensions
     {

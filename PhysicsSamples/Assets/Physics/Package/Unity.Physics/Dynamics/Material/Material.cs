@@ -2,7 +2,7 @@ using System;
 using Unity.Assertions;
 using Unity.Mathematics;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     /// <summary>
     /// Defines the collision response policy of a collider

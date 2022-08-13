@@ -2,7 +2,7 @@ using System;
 using Unity.Entities;
 using Unity.Jobs;
 
-namespace Unity.Physics.Systems
+namespace SM.Physics.Systems
 {
     // Simulates the physics world forwards in time
     [UpdateInGroup(typeof(FixedStepSimulationSystemGroup))]

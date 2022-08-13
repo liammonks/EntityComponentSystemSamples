@@ -1,8 +1,8 @@
 using System;
 using NUnit.Framework;
-using Unity.Physics.Authoring;
-using Unity.Physics.Editor;
-using Unity.Physics.Tests.Authoring;
+using SM.Physics.Authoring;
+using SM.Physics.Editor;
+using SM.Physics.Tests.Authoring;
 using UnityEngine;
 #if LEGACY_PHYSICS
 using LegacyBox = UnityEngine.BoxCollider;
@@ -12,7 +12,7 @@ using LegacySphere = UnityEngine.SphereCollider;
 using LegacyRigidBody = UnityEngine.Rigidbody;
 #endif
 
-namespace Unity.Physics.Tests.Editor
+namespace SM.Physics.Tests.Editor
 {
     class StatusMessageUtility_IntegrationTests : BaseHierarchyConversionTest
     {

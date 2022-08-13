@@ -4,7 +4,7 @@ using Unity.Collections;
 using UnityEngine;
 using Assert = UnityEngine.Assertions.Assert;
 
-namespace Unity.Physics.Tests.Base.Containers
+namespace SM.Physics.Tests.Base.Containers
 {
     class ElementPoolTests
     {

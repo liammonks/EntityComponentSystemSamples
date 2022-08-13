@@ -9,7 +9,7 @@ using UnityEngine.Profiling;
 using Hash128 = Unity.Entities.Hash128;
 using UnityMesh = UnityEngine.Mesh;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     public abstract partial class BaseShapeConversionSystem<T> : GameObjectConversionSystem where T : Component
     {

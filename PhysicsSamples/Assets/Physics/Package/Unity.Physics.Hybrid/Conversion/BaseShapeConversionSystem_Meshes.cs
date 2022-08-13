@@ -6,7 +6,7 @@ using Unity.Entities;
 using Unity.Jobs;
 using Unity.Mathematics;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     public partial class BaseShapeConversionSystem<T>
     {

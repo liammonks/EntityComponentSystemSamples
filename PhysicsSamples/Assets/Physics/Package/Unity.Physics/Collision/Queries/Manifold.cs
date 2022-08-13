@@ -3,9 +3,9 @@ using Unity.Burst;
 using Unity.Collections;
 using Unity.Collections.LowLevel.Unsafe;
 using Unity.Mathematics;
-using static Unity.Physics.Math;
+using static SM.Physics.Math;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     // A header preceding a number of contact points in a stream.
     struct ContactHeader

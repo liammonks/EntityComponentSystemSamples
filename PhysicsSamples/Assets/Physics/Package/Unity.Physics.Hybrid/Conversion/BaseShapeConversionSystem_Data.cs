@@ -4,7 +4,7 @@ using Unity.Mathematics;
 using UnityEngine;
 using Hash128 = Unity.Entities.Hash128;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     // structure with minimal data needed to incrementally convert a shape that is possibly part of a compound collider
     struct ColliderInstance : IEquatable<ColliderInstance>

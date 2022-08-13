@@ -8,7 +8,7 @@ using Unity.Jobs;
 using Unity.Mathematics;
 using Hash128 = Unity.Entities.Hash128;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     public partial class BaseShapeConversionSystem<T>
     {

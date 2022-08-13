@@ -119,7 +119,7 @@ A `PhysicsJoint` component is a little different from the others described here.
 
 The behavior of the joint is described by the `JointData` property. Like the `PhysicsCollider` component, this is a `BlobAssetReference` to a `JointData`. The precise behavior of each joint depends on the type of this data.
 
-Unity Physics has currently several pre-created types of joints – and the list will extend in the near future. For the current existing joint types, there are static creation functions in `Unity.Physics.JointData` and, like with shapes, the input parameters vary between different types. For example, the `CreateBallAndSocket` method simply needs to know where the joint is located relative to each body, while `CreateLimitedHinge()` additionally needs to know what axis the bodies are permitted to rotate about, and what the minimum and maximum limit for this rotation is.
+Unity Physics has currently several pre-created types of joints – and the list will extend in the near future. For the current existing joint types, there are static creation functions in `SM.Physics.JointData` and, like with shapes, the input parameters vary between different types. For example, the `CreateBallAndSocket` method simply needs to know where the joint is located relative to each body, while `CreateLimitedHinge()` additionally needs to know what axis the bodies are permitted to rotate about, and what the minimum and maximum limit for this rotation is.
 
 Here are the currently available Joint types:
 

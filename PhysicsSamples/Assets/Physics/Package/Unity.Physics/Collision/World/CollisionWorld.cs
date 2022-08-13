@@ -6,10 +6,10 @@ using Unity.Entities;
 using Unity.Collections.LowLevel.Unsafe;
 using Unity.Jobs;
 using Unity.Mathematics;
-using static Unity.Physics.Math;
+using static SM.Physics.Math;
 using Unity.Jobs.LowLevel.Unsafe;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     // A collection of rigid bodies wrapped by a bounding volume hierarchy.
     // This allows to do collision queries such as raycasting, overlap testing, etc.

@@ -4,11 +4,11 @@ using System.Linq;
 using System.Reflection;
 using System.Text.RegularExpressions;
 using NUnit.Framework;
-using Unity.Physics.Authoring;
+using SM.Physics.Authoring;
 using UnityEditor.PackageManager;
 using UnityEngine;
 
-namespace Unity.Physics.Tests.Authoring
+namespace SM.Physics.Tests.Authoring
 {
     class HelpURLs_UnitTests
     {

@@ -27,7 +27,7 @@ Unity Physics keeps data compatibility with the Havok Physics Integration (HPI) 
 
 |Collider|Description|
 |---|---|
-| Base        | Containers and Math used throughout Unity.Physics.                        |
+| Base        | Containers and Math used throughout SM.Physics.                        |
 | Collision   | Contains all code for collision detection and spatial queries.            |
 | Dynamics    | Contains all code for integration, constraint solving and world stepping. |
 | Extensions  | Optional components for characters, vehicles, debugging helpers etc.      |

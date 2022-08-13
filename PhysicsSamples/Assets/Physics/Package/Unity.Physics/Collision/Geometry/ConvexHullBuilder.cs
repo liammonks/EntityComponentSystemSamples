@@ -6,10 +6,10 @@ using Unity.Collections;
 using Unity.Mathematics;
 using UnityEngine.Assertions;
 using Unity.Collections.LowLevel.Unsafe;
-using static Unity.Physics.Math;
+using static SM.Physics.Math;
 using Unity.Burst;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     /// <summary>
     /// Convex hull builder.

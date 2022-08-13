@@ -2,7 +2,7 @@ using Unity.Collections;
 using Unity.Mathematics;
 using UnityEngine.Assertions;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     public struct SurfaceConstraintInfo // TODO: Move into SimplexSolver
     {

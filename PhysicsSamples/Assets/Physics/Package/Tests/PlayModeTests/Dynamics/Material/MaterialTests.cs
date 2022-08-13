@@ -2,7 +2,7 @@ using System;
 using NUnit.Framework;
 using UnityEngine;
 
-namespace Unity.Physics.Tests.Dynamics.Materials
+namespace SM.Physics.Tests.Dynamics.Materials
 {
     class MaterialTests
     {

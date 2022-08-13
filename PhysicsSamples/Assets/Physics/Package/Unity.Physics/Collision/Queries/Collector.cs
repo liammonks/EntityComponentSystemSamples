@@ -4,9 +4,9 @@ using Unity.Collections.LowLevel.Unsafe;
 using Unity.Entities;
 using Unity.Mathematics;
 using UnityEngine.Assertions;
-using static Unity.Physics.Math;
+using static SM.Physics.Math;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     public interface IQueryResult
     {

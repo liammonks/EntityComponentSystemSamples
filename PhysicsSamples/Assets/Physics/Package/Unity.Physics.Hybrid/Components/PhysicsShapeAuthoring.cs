@@ -12,7 +12,7 @@ using UnityEngine.Rendering;
 using UnityComponent = UnityEngine.Component;
 using UnityMesh = UnityEngine.Mesh;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     public enum ShapeType
     {
@@ -829,7 +829,7 @@ namespace Unity.Physics.Authoring
         [BurstCompile]
         struct BakePointsJob : IJobParallelFor
         {
-            [Collections.ReadOnly]
+            [Unity.Collections.ReadOnly]
             public NativeArray<float3> Points;
             public float4x4 LocalToShape;
             public NativeArray<float3> Output;

@@ -2,11 +2,11 @@ using System;
 using Unity.Entities;
 using Unity.Mathematics;
 using Unity.Collections.LowLevel.Unsafe;
-using static Unity.Physics.BoundingVolumeHierarchy;
-using static Unity.Physics.Math;
+using static SM.Physics.BoundingVolumeHierarchy;
+using static SM.Physics.Math;
 using Unity.Assertions;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     // The input to collider cast queries consists of a Collider and its initial orientation,
     // and the Start & End positions of a line segment the Collider is to be swept along.

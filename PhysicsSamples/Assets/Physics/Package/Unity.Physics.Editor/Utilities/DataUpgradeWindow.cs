@@ -10,7 +10,7 @@ using UnityEditor.VersionControl;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     class DataUpgradeWindow : EditorWindow
     {

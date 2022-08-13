@@ -7,7 +7,7 @@ using Unity.Mathematics;
 using Unity.Transforms;
 using UnityEngine.Assertions;
 
-namespace Unity.Physics.Systems
+namespace SM.Physics.Systems
 {
     /// <summary>
     /// Utilities for building a physics world.

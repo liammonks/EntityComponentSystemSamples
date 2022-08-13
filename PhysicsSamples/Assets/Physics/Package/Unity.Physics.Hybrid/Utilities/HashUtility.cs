@@ -4,7 +4,7 @@ using Unity.Collections.LowLevel.Unsafe;
 using Unity.Mathematics;
 using Hash128 = Unity.Entities.Hash128;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     static class HashUtility
     {

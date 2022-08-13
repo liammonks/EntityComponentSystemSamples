@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using NUnit.Framework;
-using Unity.Physics.Editor;
+using SM.Physics.Editor;
 using UnityEditor;
 
-namespace Unity.Physics.Tests.Editor
+namespace SM.Physics.Tests.Editor
 {
     class StatusMessageUtility_UnitTests
     {

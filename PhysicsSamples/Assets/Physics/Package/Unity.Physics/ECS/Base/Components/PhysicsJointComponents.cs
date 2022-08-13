@@ -4,11 +4,11 @@ using System.ComponentModel;
 using Unity.Collections;
 using Unity.Entities;
 using Unity.Mathematics;
-using Unity.Physics.Extensions;
+using SM.Physics.Extensions;
 using Unity.Properties;
-using FloatRange = Unity.Physics.Math.FloatRange;
+using FloatRange = SM.Physics.Math.FloatRange;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     /// <summary>
     /// A pair of bodies with some constraint between them (either a joint or a motor)

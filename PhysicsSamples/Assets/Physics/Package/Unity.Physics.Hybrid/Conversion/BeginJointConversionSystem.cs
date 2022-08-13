@@ -1,6 +1,6 @@
 using Unity.Entities;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     /// <summary>
     /// A system that is updated before all built-in conversion systems that produce <see cref="PhysicsJoint"/>.

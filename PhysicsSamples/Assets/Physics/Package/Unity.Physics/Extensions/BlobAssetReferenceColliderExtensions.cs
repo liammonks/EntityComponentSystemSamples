@@ -1,7 +1,7 @@
 using System.Runtime.CompilerServices;
 using Unity.Entities;
 
-namespace Unity.Physics.Extensions
+namespace SM.Physics.Extensions
 {
     public static class BlobAssetReferenceColliderExtension
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using NUnit.Framework;
 using Unity.Mathematics;
-using Unity.Physics.Authoring;
+using SM.Physics.Authoring;
 using UnityEditor;
 using UnityEngine;
 #if !UNITY_EDITOR
@@ -20,7 +20,7 @@ using LegacyRigidBody = UnityEngine.Rigidbody;
 #endif
 using UnityMesh = UnityEngine.Mesh;
 
-namespace Unity.Physics.Tests.Authoring
+namespace SM.Physics.Tests.Authoring
 {
     class PhysicsShapeConversionSystem_IntegrationTests : BaseHierarchyConversionTest
     {

@@ -5,7 +5,7 @@ using Unity.Entities;
 using Unity.Jobs;
 using Unity.Transforms;
 
-namespace Unity.Physics.Systems
+namespace SM.Physics.Systems
 {
     // A system which copies transforms and velocities from the physics world back to the original entity components.
     [UpdateInGroup(typeof(FixedStepSimulationSystemGroup))]

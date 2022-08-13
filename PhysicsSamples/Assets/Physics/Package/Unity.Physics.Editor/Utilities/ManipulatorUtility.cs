@@ -2,7 +2,7 @@ using System;
 using Unity.Mathematics;
 using UnityEngine;
 
-namespace Unity.Physics.Editor
+namespace SM.Physics.Editor
 {
     enum MatrixState
     {

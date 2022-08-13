@@ -1,8 +1,8 @@
-using Unity.Physics.Authoring;
+using SM.Physics.Authoring;
 using UnityEditor;
 using UnityEngine;
 
-namespace Unity.Physics.Editor
+namespace SM.Physics.Editor
 {
     [CustomPropertyDrawer(typeof(EulerAngles))]
     class EulerAnglesDrawer : BaseDrawer

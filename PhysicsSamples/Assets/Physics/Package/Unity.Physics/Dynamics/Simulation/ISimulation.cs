@@ -3,7 +3,7 @@ using Unity.Collections;
 using Unity.Jobs;
 using Unity.Mathematics;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     // Implementations of ISimulation
     public enum SimulationType
@@ -21,7 +21,7 @@ namespace Unity.Physics
         public float3 Gravity; // Gravity in the physics world
         public int NumSolverIterations; // Number of iterations to perform while solving constraints
         public bool SynchronizeCollisionWorld; // Whether to update the collision world after the step for more precise queries
-        public Solver.StabilizationHeuristicSettings SolverStabilizationHeuristicSettings; // Settings for solver stabilization heuristic in Unity.Physics
+        public Solver.StabilizationHeuristicSettings SolverStabilizationHeuristicSettings; // Settings for solver stabilization heuristic in SM.Physics
         public NativeArray<int> HaveStaticBodiesChanged; // Array of size 1 used for optimization of static body synchronization.
     }
 

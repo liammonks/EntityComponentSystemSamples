@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     [CreateAssetMenu(menuName = "DOTS/Physics/Physics Material Template")]
     [HelpURL(HelpURLs.PhysicsMaterialTemplate)]

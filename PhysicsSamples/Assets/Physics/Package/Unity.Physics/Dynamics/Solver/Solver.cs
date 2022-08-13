@@ -4,9 +4,9 @@ using Unity.Collections.LowLevel.Unsafe;
 using Unity.Jobs;
 using Unity.Mathematics;
 using UnityEngine.Assertions;
-using static Unity.Physics.Math;
+using static SM.Physics.Math;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     public static class Solver
     {
@@ -283,7 +283,7 @@ namespace Unity.Physics
             {
                 NativeArray<int> workItemList = solverSchedulerInfo.NumWorkItems;
 
-                //TODO: Change this to Allocator.TempJob when https://github.com/Unity-Technologies/Unity.Physics/issues/7 is resolved
+                //TODO: Change this to Allocator.TempJob when https://github.com/Unity-Technologies/SM.Physics/issues/7 is resolved
                 JobHandle collisionEventStreamHandle = NativeStream.ScheduleConstruct(out collisionEvents, workItemList, inputDeps, Allocator.Persistent);
                 JobHandle triggerEventStreamHandle = NativeStream.ScheduleConstruct(out triggerEvents, workItemList, inputDeps, Allocator.Persistent);
 

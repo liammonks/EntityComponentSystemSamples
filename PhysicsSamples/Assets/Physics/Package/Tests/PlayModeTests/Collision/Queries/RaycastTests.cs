@@ -2,7 +2,7 @@ using System;
 using NUnit.Framework;
 using Unity.Mathematics;
 
-namespace Unity.Physics.Tests.Collision.Queries
+namespace SM.Physics.Tests.Collision.Queries
 {
     class RayCastTests
     {

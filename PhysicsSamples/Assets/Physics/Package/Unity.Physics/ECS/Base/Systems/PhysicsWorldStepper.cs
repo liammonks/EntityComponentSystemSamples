@@ -1,7 +1,7 @@
 using System;
 using Unity.Jobs;
 
-namespace Unity.Physics.Systems
+namespace SM.Physics.Systems
 {
     /// <summary>
     /// Utility class for scheduling physics simulation jobs

@@ -1,7 +1,7 @@
 using System;
 using Unity.Entities;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     /// <summary>
     /// An event raised when a pair of bodies interact during solving.

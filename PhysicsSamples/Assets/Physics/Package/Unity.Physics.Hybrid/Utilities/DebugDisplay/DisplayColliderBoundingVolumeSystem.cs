@@ -1,5 +1,5 @@
-using Unity.Physics;
-using Unity.Physics.Systems;
+using SM.Physics;
+using SM.Physics.Systems;
 using Unity.Collections;
 using Unity.Entities;
 using Unity.Jobs;
@@ -7,7 +7,7 @@ using Unity.Mathematics;
 using UnityEngine;
 using Unity.Burst;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     /// Job to iterate over all the bodies in a scene, for any
     /// which have a collider, calculate the bounding box and
@@ -29,7 +29,7 @@ namespace Unity.Physics.Authoring
                     Aabb aabb = Bodies[b].Collider.Value.CalculateAabb(Bodies[b].WorldFromBody);
 
                     float3 center = aabb.Center;
-                    OutputStream.Box(aabb.Extents, center, Quaternion.identity, DebugDisplay.ColorIndex.BrightRed);
+                    OutputStream.Box(aabb.Extents, center, Quaternion.identity, Unity.DebugDisplay.ColorIndex.BrightRed);
                 }
             }
             OutputStream.End();

@@ -43,7 +43,7 @@ Many queries produce similar outputs or hits as they are referred to in the code
 
 Ray cast queries use start and end points as their input and produce a set of hit results.
 
-Lower level ray cast routines against primitives have a slightly different input. They do not compute the surface intersection point explicitly for efficiency reasons. Instead, given a ray of origin - `O` and displacement (combining direction & distance) - `D`, they return a hit fraction - `f`, which can be used later to compute the hit position if needed using `O + (D * f)`. See [Ray](../api/Unity.Physics.Ray.html) in API documentation for more details.
+Lower level ray cast routines against primitives have a slightly different input. They do not compute the surface intersection point explicitly for efficiency reasons. Instead, given a ray of origin - `O` and displacement (combining direction & distance) - `D`, they return a hit fraction - `f`, which can be used later to compute the hit position if needed using `O + (D * f)`. See [Ray](../api/SM.Physics.Ray.html) in API documentation for more details.
 
 >**Note:** Rays starting inside primitives (spheres, capsules, box and convex shapes) confirm a hit at the starting point, but do not report another intersection as the ray leaves the volume.
 
@@ -77,7 +77,7 @@ There are two types of distance queries: **Point Distance Queries** and **Collid
  * `Transform`: The Input collider's transform in the calling Collider's local space.
  * `MaxDistance`: Filter to determine what objects should be ignored by the query.
 
-See [PointDistanceInput](../api/Unity.Physics.PointDistanceInput.html) and [ColliderDistanceInput](../api/Unity.Physics.ColliderDistanceInput.html) in API documentation for more details about the input structures.
+See [PointDistanceInput](../api/SM.Physics.PointDistanceInput.html) and [ColliderDistanceInput](../api/SM.Physics.ColliderDistanceInput.html) in API documentation for more details about the input structures.
 
 # Overlap query
 
@@ -130,7 +130,7 @@ This section lists some simple examples for various queries. The examples for Ra
 ```csharp
     using Unity.Entities;
     using Unity.Mathematics;
-    using Unity.Physics;
+    using SM.Physics;
 ```
 
 ## Ray casts
@@ -138,7 +138,7 @@ This section lists some simple examples for various queries. The examples for Ra
  ```csharp
     public Entity Raycast(float3 RayFrom, float3 RayTo)
     {
-        var physicsWorldSystem = World.Active.GetExistingSystem<Unity.Physics.Systems.BuildPhysicsWorld>();
+        var physicsWorldSystem = World.Active.GetExistingSystem<SM.Physics.Systems.BuildPhysicsWorld>();
         var collisionWorld = physicsWorldSystem.PhysicsWorld.CollisionWorld;
         RaycastInput input = new RaycastInput()
         {
@@ -174,7 +174,7 @@ Collider casts are very similar to the ray casts, however you need to make a Col
 ```csharp
   public unsafe Entity SphereCast(float3 RayFrom, float3 RayTo, float radius)
     {
-        var physicsWorldSystem = World.Active.GetExistingSystem<Unity.Physics.Systems.BuildPhysicsWorld>();
+        var physicsWorldSystem = World.Active.GetExistingSystem<SM.Physics.Systems.BuildPhysicsWorld>();
         var collisionWorld = physicsWorldSystem.PhysicsWorld.CollisionWorld;
 
         var filter = new CollisionFilter()
@@ -223,7 +223,7 @@ Jobs can only be created in classes that inherit from `SystemBase`. Here are the
     using Unity.Entities;
     using Unity.Jobs;
     using Unity.Mathematics;
-    using Unity.Physics;
+    using SM.Physics;
 ```
 
 ```csharp

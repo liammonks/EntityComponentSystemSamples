@@ -2,7 +2,7 @@ using NUnit.Framework;
 using Unity.Collections;
 using Unity.Collections.LowLevel.Unsafe;
 
-namespace Unity.Physics.Tests.Base.Containers
+namespace SM.Physics.Tests.Base.Containers
 {
     class EventStreamTests
     {

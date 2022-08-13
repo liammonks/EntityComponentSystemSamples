@@ -14,7 +14,7 @@ using LegacyCollider = UnityEngine.Collider;
 using LegacyRigidBody = UnityEngine.Rigidbody;
 #endif
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     // put static UnityObject buffers in separate utility class so other methods can Burst compile
     static class PhysicsShapeExtensions_NonBursted

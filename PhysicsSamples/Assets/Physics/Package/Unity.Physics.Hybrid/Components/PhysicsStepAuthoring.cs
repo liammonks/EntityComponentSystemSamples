@@ -1,9 +1,9 @@
 using UnityEngine;
 using Unity.Entities;
 using Unity.Mathematics;
-using static Unity.Physics.PhysicsStep;
+using static SM.Physics.PhysicsStep;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     [AddComponentMenu("DOTS/Physics/Physics Step")]
     [DisallowMultipleComponent]

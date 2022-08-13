@@ -6,7 +6,7 @@ using Unity.Entities;
 
 using Assert = UnityEngine.Assertions.Assert;
 
-namespace Unity.Physics.Tests.Collision.RigidBody
+namespace SM.Physics.Tests.Collision.RigidBody
 {
     class RigidBodyTest
     {
@@ -21,7 +21,7 @@ namespace Unity.Physics.Tests.Collision.RigidBody
                 BevelRadius = 0.2f
             };
 
-            Physics.RigidBody rigidbodyBox = Unity.Physics.RigidBody.Zero;
+            Physics.RigidBody rigidbodyBox = SM.Physics.RigidBody.Zero;
             rigidbodyBox.Collider = BoxCollider.Create(geometry);
 
             var boxAabb = rigidbodyBox.CalculateAabb();
@@ -38,7 +38,7 @@ namespace Unity.Physics.Tests.Collision.RigidBody
                 Radius = 1.0f
             };
 
-            Physics.RigidBody rigidbodySphere = Unity.Physics.RigidBody.Zero;
+            Physics.RigidBody rigidbodySphere = SM.Physics.RigidBody.Zero;
             rigidbodySphere.Collider = SphereCollider.Create(geometry);
 
             var sphereAabb = rigidbodySphere.CalculateAabb();
@@ -49,7 +49,7 @@ namespace Unity.Physics.Tests.Collision.RigidBody
         [Test]
         public unsafe void RigidBodyCastRayTest()
         {
-            Physics.RigidBody rigidbody = Unity.Physics.RigidBody.Zero;
+            Physics.RigidBody rigidbody = SM.Physics.RigidBody.Zero;
 
             const float size = 1.0f;
             const float convexRadius = 0.0f;
@@ -93,7 +93,7 @@ namespace Unity.Physics.Tests.Collision.RigidBody
         [Test]
         public unsafe void RigidBodyCastColliderTest()
         {
-            Physics.RigidBody rigidbody = Unity.Physics.RigidBody.Zero;
+            Physics.RigidBody rigidbody = SM.Physics.RigidBody.Zero;
 
             const float size = 1.0f;
             const float convexRadius = 0.0f;
@@ -140,7 +140,7 @@ namespace Unity.Physics.Tests.Collision.RigidBody
         [Test]
         public unsafe void RigidBodyCalculateDistancePointTest()
         {
-            Physics.RigidBody rigidbody = Unity.Physics.RigidBody.Zero;
+            Physics.RigidBody rigidbody = SM.Physics.RigidBody.Zero;
 
             const float size = 1.0f;
             const float convexRadius = 0.0f;

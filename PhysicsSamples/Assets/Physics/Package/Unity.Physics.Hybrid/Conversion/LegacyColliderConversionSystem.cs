@@ -12,7 +12,7 @@ using LegacyCapsule = UnityEngine.CapsuleCollider;
 using LegacyMesh = UnityEngine.MeshCollider;
 using LegacySphere = UnityEngine.SphereCollider;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     public abstract class BaseLegacyColliderConversionSystem<T> : BaseShapeConversionSystem<T> where T : LegacyCollider
     {

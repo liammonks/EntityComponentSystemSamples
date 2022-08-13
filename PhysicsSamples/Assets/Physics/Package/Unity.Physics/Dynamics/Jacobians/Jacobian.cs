@@ -5,7 +5,7 @@ using Unity.Collections.LowLevel.Unsafe;
 using Unity.Mathematics;
 using UnityEngine.Assertions;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     public enum JacobianType : byte
     {
@@ -269,7 +269,7 @@ namespace Unity.Physics
     {
         // This is the inverse function to CalculateConstraintTauAndDamping
         // Given a final Tau and Damping you can get the original Spring Frequency and Damping for a given solver step
-        // See Unity.Physics.Constraint struct for discussion about default Spring Frequency and Damping values.
+        // See SM.Physics.Constraint struct for discussion about default Spring Frequency and Damping values.
         public static void CalculateSpringFrequencyAndDamping(float constraintTau, float constraintDamping, float timestep, int iterations, out float springFrequency, out float springDamping)
         {
             int n = iterations;

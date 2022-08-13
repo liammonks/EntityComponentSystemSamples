@@ -1,9 +1,9 @@
 using System.Diagnostics;
 using Unity.Burst;
 using Unity.Mathematics;
-using static Unity.Physics.Math;
+using static SM.Physics.Math;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     // Low level convex-convex distance query implementations
     static class ConvexConvexDistanceQueries

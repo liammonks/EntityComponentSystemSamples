@@ -6,7 +6,7 @@ using Unity.Collections;
 using Unity.Collections.LowLevel.Unsafe;
 using Unity.Mathematics;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     // A collision mesh, containing triangles and quads.
     // Warning: This is just the header, the mesh's variable sized data follows it in memory.

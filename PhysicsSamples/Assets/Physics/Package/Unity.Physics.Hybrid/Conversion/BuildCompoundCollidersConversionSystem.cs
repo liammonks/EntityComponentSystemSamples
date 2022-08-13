@@ -10,7 +10,7 @@ using UnityEngine;
 using UnityEngine.Profiling;
 using Hash128 = Unity.Entities.Hash128;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     [UpdateBefore(typeof(EndColliderConversionSystem))]
     [AlwaysUpdateSystem]

@@ -1,9 +1,9 @@
 using Unity.Assertions;
 using Unity.Entities;
 using Unity.Mathematics;
-using static Unity.Physics.Math;
+using static SM.Physics.Math;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     /// <summary>
     /// This struct captures the information needed for ray casting.

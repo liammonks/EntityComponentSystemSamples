@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEngine;
 using static UnityEditor.IMGUI.Controls.PrimitiveBoundsHandle;
 
-namespace Unity.Physics.Editor
+namespace SM.Physics.Editor
 {
     static class PhysicsBoundsHandleUtility
     {

@@ -5,9 +5,9 @@ using Unity.Collections;
 using Unity.Collections.LowLevel.Unsafe;
 using Unity.Entities;
 using Unity.Jobs;
-using Unity.Physics.Systems;
+using SM.Physics.Systems;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     // A system which draws any collision events produced by the physics step system
     [UpdateInGroup(typeof(FixedStepSimulationSystemGroup))]
@@ -45,7 +45,7 @@ namespace Unity.Physics.Authoring
                 *sharedOutput = m_DebugStreamSystem.GetContext(1);
                 sharedOutput->Begin(0);
 
-                // This will call the extension method defined in Unity.Physics
+                // This will call the extension method defined in SM.Physics
                 Dependency = new DisplayCollisionEventsJob
                 {
                     World = m_BuildPhysicsWorldSystem.PhysicsWorld,

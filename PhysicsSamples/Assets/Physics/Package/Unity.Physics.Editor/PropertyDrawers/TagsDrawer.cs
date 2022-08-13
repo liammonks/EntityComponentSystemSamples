@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using System.Linq;
-using Unity.Physics.Authoring;
+using SM.Physics.Authoring;
 using UnityEditor;
 using UnityEngine;
 
-namespace Unity.Physics.Editor
+namespace SM.Physics.Editor
 {
     abstract class TagsDrawer<T> : PropertyDrawer where T : ScriptableObject, ITagNames
     {

@@ -7,17 +7,17 @@ using Unity.Collections.LowLevel.Unsafe;
 using Unity.Entities;
 using Unity.Jobs;
 using Unity.Mathematics;
-using Unity.Physics.Authoring;
+using SM.Physics.Authoring;
 using UnityEditor;
 using UnityEditor.IMGUI.Controls;
 using UnityEngine;
 using UnityMesh = UnityEngine.Mesh;
-using Unity.Physics.Extensions;
+using SM.Physics.Extensions;
 #if LEGACY_PHYSICS
 using LegacyRigidBody = UnityEngine.Rigidbody;
 #endif
 
-namespace Unity.Physics.Editor
+namespace SM.Physics.Editor
 {
     [CustomEditor(typeof(PhysicsShapeAuthoring))]
     [CanEditMultipleObjects]

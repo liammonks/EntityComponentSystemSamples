@@ -4,10 +4,10 @@ using Unity.Burst;
 using Unity.Collections;
 using Unity.Jobs;
 using Unity.Mathematics;
-using Unity.Physics.Tests.Utils;
+using SM.Physics.Tests.Utils;
 using Random = Unity.Mathematics.Random;
 
-namespace Unity.Physics.Tests.Collision.Colliders
+namespace SM.Physics.Tests.Collision.Colliders
 {
     /// <summary>
     /// Contains all <see cref="ConvexCollider"/> unit tests

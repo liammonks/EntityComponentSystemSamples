@@ -3,7 +3,7 @@ using NUnit.Framework;
 using UnityEditor;
 using UnityEngine;
 
-namespace Unity.Physics.Tests
+namespace SM.Physics.Tests
 {
     public class AErrorVerification_UnitTests
     {

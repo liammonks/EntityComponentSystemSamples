@@ -6,7 +6,7 @@ using Unity.Mathematics;
 using UnityEngine;
 using Hash128 = Unity.Entities.Hash128;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     /// <summary>
     /// Structure for hashing input data used for convex and mesh colliders.

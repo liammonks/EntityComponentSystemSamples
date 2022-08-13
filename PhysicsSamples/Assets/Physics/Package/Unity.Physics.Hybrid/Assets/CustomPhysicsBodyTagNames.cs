@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     [CreateAssetMenu(menuName = "DOTS/Physics/Custom Physics Body Tag Names", fileName = "Custom Physics Body Tag Names")]
     [HelpURL(HelpURLs.CustomPhysicsBodyTagNames)]

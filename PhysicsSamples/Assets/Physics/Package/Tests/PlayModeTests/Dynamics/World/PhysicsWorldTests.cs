@@ -1,7 +1,7 @@
 using System;
 using NUnit.Framework;
 
-namespace Unity.Physics.Tests.Dynamics.PhysicsWorld
+namespace SM.Physics.Tests.Dynamics.PhysicsWorld
 {
     class PhysicsWorldTests
     {

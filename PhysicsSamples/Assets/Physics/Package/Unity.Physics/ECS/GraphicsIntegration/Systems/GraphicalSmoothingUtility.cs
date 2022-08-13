@@ -1,10 +1,10 @@
 using System.Runtime.CompilerServices;
 using Unity.Collections;
 using Unity.Mathematics;
-using Unity.Physics.Extensions;
+using SM.Physics.Extensions;
 using Unity.Transforms;
 
-namespace Unity.Physics.GraphicsIntegration
+namespace SM.Physics.GraphicsIntegration
 {
     /// <summary>
     /// Utility functions for smoothing the motion of rigid bodies' graphical representations when physics steps at a lower frequency than rendering.

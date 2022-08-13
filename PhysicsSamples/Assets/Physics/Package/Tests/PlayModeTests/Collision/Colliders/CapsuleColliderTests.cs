@@ -4,9 +4,9 @@ using Unity.Burst;
 using Unity.Collections.LowLevel.Unsafe;
 using Unity.Jobs;
 using Unity.Mathematics;
-using TestUtils = Unity.Physics.Tests.Utils.TestUtils;
+using TestUtils = SM.Physics.Tests.Utils.TestUtils;
 
-namespace Unity.Physics.Tests.Collision.Colliders
+namespace SM.Physics.Tests.Collision.Colliders
 {
     /// <summary>
     /// Class collecting all tests for the <see cref="CapsuleCollider"/>

@@ -3,7 +3,7 @@ using NUnit.Framework;
 using Unity.Mathematics;
 using Assert = UnityEngine.Assertions.Assert;
 
-namespace Unity.Physics.Tests.Dynamics.Motion
+namespace SM.Physics.Tests.Dynamics.Motion
 {
     class MotionTests
     {

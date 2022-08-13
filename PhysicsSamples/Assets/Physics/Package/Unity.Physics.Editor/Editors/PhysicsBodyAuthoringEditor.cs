@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using Unity.Mathematics;
-using Unity.Physics.Authoring;
+using SM.Physics.Authoring;
 using UnityEditor;
 using UnityEngine;
 
-namespace Unity.Physics.Editor
+namespace SM.Physics.Editor
 {
     [CustomEditor(typeof(PhysicsBodyAuthoring))]
     [CanEditMultipleObjects]

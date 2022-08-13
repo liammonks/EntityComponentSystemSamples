@@ -2,10 +2,10 @@ using System;
 using Unity.Entities;
 using Unity.Mathematics;
 using UnityEngine.Assertions;
-using static Unity.Physics.BoundingVolumeHierarchy;
-using static Unity.Physics.Math;
+using static SM.Physics.BoundingVolumeHierarchy;
+using static SM.Physics.Math;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     // The input to point distance queries
     public struct PointDistanceInput

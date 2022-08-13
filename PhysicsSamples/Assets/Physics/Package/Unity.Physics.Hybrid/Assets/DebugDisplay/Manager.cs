@@ -5,7 +5,7 @@ using System.IO;
 using System;
 using Unity.Burst;
 using Unity.Mathematics;
-using Unity.Physics.Authoring; //for meshes
+using SM.Physics.Authoring; //for meshes
 using UnityEditor;
 
 namespace Unity.DebugDisplay
@@ -175,7 +175,7 @@ namespace Unity.DebugDisplay
 
 #if UNITY_EDITOR
         internal static string debugDirName =
-            "Packages/com.unity.physics/Unity.Physics.Hybrid/Assets/DebugDisplay/DebugDisplayResources/";
+            "Packages/com.unity.physics/SM.Physics.Hybrid/Assets/DebugDisplay/DebugDisplayResources/";
         private static Material debugTextMaterial;
         private static Material graphMaterial;
         private static Material lineMaterial;

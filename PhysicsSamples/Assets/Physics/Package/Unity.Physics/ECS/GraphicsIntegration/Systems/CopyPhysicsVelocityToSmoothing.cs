@@ -4,9 +4,9 @@ using Unity.Collections;
 using Unity.Collections.LowLevel.Unsafe;
 using Unity.Entities;
 using Unity.Jobs;
-using Unity.Physics.Systems;
+using SM.Physics.Systems;
 
-namespace Unity.Physics.GraphicsIntegration
+namespace SM.Physics.GraphicsIntegration
 {
     /// <summary>
     /// A system that writes to a body's <see cref="PhysicsGraphicalSmoothing"/> component by copying its <see cref="PhysicsVelocity"/> after physics has stepped.

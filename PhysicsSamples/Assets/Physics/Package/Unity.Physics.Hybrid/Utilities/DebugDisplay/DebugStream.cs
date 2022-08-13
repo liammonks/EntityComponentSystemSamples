@@ -3,13 +3,13 @@ using Unity.Collections;
 using Unity.Entities;
 using Unity.Jobs;
 using Unity.Mathematics;
-using Unity.Physics;
-using Unity.Physics.Authoring;
-using Unity.Physics.Systems;
+using SM.Physics;
+using SM.Physics.Authoring;
+using SM.Physics.Systems;
 using UnityEditor;
 using UnityEngine;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     [UpdateInGroup(typeof(FixedStepSimulationSystemGroup))]
     [UpdateAfter(typeof(EndFramePhysicsSystem))]

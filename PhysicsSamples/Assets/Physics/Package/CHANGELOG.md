@@ -144,7 +144,7 @@
     * Added `Integrator.Integrate()` which takes a `RigidTransform`, `MotionVelocity` and time step and integrates the transform in time. This can be used to integrate forward in time, but also to undo integration if necessary (by providing the negative time).
     * Removed `ModifiableJacobianHeader.HasColliderKeys`, `ModifiableJacobianHeader.ColliderKeyA` and `ModifiableJacobianHeader.ColliderKeyB` as they are not meant to be read by users, but to fill the data for collision events.
     * Removed `SimulationCallbacks.Phase.PostSolveJacobians` as it doesn't have real use cases and it's causing inconsistencies between the two engines. Instead, users should schedule their jobs after `StepPhysicsWorld` and before `ExportPhysicsWorld` to achieve a similar effect.
-    * Added `ClampToMaxLength()` to `Unity.Physics.Math`, which reduces the length of specified `float3` vector to specified maxLength if it was bigger.
+    * Added `ClampToMaxLength()` to `SM.Physics.Math`, which reduces the length of specified `float3` vector to specified maxLength if it was bigger.
 	* `ColliderCastHit` and `DistanceHit` now have `QueryColliderKey` field. If the input of `ColliderCast` or `ColliderDistance` queries contains a non-convex collider, this field will contain the collider key of the input collider. Otherwise, its value will be `ColliderKey.Empty`.
     * Removed `AddInputDependency()` and `GetOutputDependency()` from all physics systems as dependencies are now handled in a different way (see below).
     * Added `RegisterPhysicsRuntimeSystemReadOnly()` and `RegisterPhysicsRuntimeSystemReadWrite()` that are both extension methods for `SystemBase` and are used to declare interaction with the runtime physics data (stored in PhysicsWorld). One should call one of these in their system's `OnStartRunning()` (using `this.RegisterPhysicsRuntimeSystemReadOnly()` or `this.RegisterPhysicsRuntimeSystemReadWrite()`) to declare interaction with the physics data, which will translate to automatic data dependencies being included in the `SystemBase.Dependency` property of any system.
@@ -747,7 +747,7 @@
         * Not providing a `threadCount` or providing an invalid value (<=0) will result in a simulation with a very small number of jobs being spawned (one per step phase)
         * Both simulation types offer the exact same customization options (callbacks) and outputs (events)
     * `ISimulation.Step()` is intended to allow you to step a simulation immediately in the calling code instead of spawning jobs
-        * Unfortunately, `Unity.Physics.Simulation` is currently not Burst-compatible, and therefore can't be wrapped in a Burst compiled job
+        * Unfortunately, `SM.Physics.Simulation` is currently not Burst-compatible, and therefore can't be wrapped in a Burst compiled job
         * `Simulation.StepImmediate()` should be wrapped in a single Burst compiled job for lightweight stepping logic; however, it doesn't support callbacks
         * If callbacks are needed, one should implement the physics step using a set of function calls that represent different phases of the physics engine and add customization logic in between these calls; this should all be wrapped in a Burst compiled job; check `Simulation.StepImmediate()` for the full list of functions that need to be called
     * Previously, if an Entity referenced by a `PhysicsJoint` component was deleted, `BuildPhysicsWorld.CreateJoints()` would assert after failing to find a valid rigid body index. Now, if no valid body is found, the `Joint.BodyIndexPair` is marked as invalid instead and the simulation will ignore them.
@@ -1291,7 +1291,7 @@
         * `DisplayCollisionEventsSystem.FinishDisplayCollisionEventsJob`
 * Run-Time Behavior
     * Collision events between infinite mass bodies (kinematic-kinematic and kinematic-static) are now raised. The reported impulse will be 0.
-    * The default value of `Unity.Physics.PhysicsStep.ThreadCountHint` has been increased from 4 to 8.
+    * The default value of `SM.Physics.PhysicsStep.ThreadCountHint` has been increased from 4 to 8.
     * `EndFramePhysicsSystem` no longer waits for `HandlesToWaitFor`, instead it produces a `FinalJobHandle` which is a combination of those jobs plus the built-in physics jobs. Subsequent systems that depend on all physics jobs being complete can use that as an input dependency.
 * Authoring/Conversion Behavior
     * `PhysicsCustomData` is now converted from `PhysicsBody.CustomTags` instead of using the flags common to all leaf shapes.
@@ -1399,11 +1399,11 @@
 
 ### Upgrade guide
 
-* Any assembly definitions referencing `Unity.Physics.Authoring` assembly by name must be updated to instead reference `Unity.Physics.Hybrid`.
+* Any assembly definitions referencing `SM.Physics.Authoring` assembly by name must be updated to instead reference `SM.Physics.Hybrid`.
 
 ### Changes
 
-* Renamed `Unity.Physics.Authoring` assembly to `Unity.Physics.Hybrid`. (All of its types still exist in the `Unity.Physics.Authoring` namespace.)
+* Renamed `SM.Physics.Authoring` assembly to `SM.Physics.Hybrid`. (All of its types still exist in the `SM.Physics.Authoring` namespace.)
 * Radius of cylinder `PhysicsShape` is no longer non-uniformly scaled when converted.
 
 ### Fixes

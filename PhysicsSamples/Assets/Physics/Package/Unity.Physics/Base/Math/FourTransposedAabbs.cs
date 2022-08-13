@@ -1,6 +1,6 @@
 using Unity.Mathematics;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     // 4 transposed AABBs
     public struct FourTransposedAabbs

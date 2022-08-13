@@ -1,9 +1,9 @@
 using NUnit.Framework;
 using Unity.Collections;
 using Unity.Mathematics;
-using static Unity.Physics.DispatchPairSequencer;
+using static SM.Physics.DispatchPairSequencer;
 
-namespace Unity.Physics.Tests.Dynamics.Schedule
+namespace SM.Physics.Tests.Dynamics.Schedule
 {
     // Tests to validate scheduler implementation
     class SchedulerTests

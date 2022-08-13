@@ -1,5 +1,5 @@
-using Unity.Physics;
-using Unity.Physics.Systems;
+using SM.Physics;
+using SM.Physics.Systems;
 using Unity.Collections;
 using Unity.Entities;
 using Unity.Jobs;
@@ -7,7 +7,7 @@ using Unity.Mathematics;
 using UnityEngine;
 using Unity.Burst;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     /// Create and dispatch a DisplayMassPropertiesJob
     [UpdateInGroup(typeof(FixedStepSimulationSystemGroup))]
@@ -86,7 +86,7 @@ namespace Unity.Physics.Authoring
                     float d = math.sqrt(k.y - h * h);
 
                     float3 boxSize = new float3(h, w, d);
-                    OutputStream.Box(boxSize, com, o, DebugDisplay.ColorIndex.Magenta);
+                    OutputStream.Box(boxSize, com, o, Unity.DebugDisplay.ColorIndex.Magenta);
                 }
                 OutputStream.End();
             }

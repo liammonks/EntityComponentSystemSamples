@@ -4,10 +4,10 @@ using Unity.Collections;
 using Unity.Entities;
 using Unity.Jobs;
 using Unity.Mathematics;
-using Unity.Physics.Systems;
+using SM.Physics.Systems;
 using Unity.Transforms;
 
-namespace Unity.Physics.GraphicsIntegration
+namespace SM.Physics.GraphicsIntegration
 {
     /// <summary>
     /// A system that can smooth out the motion of rigid bodies if the fixed physics tick rate is slower than the variable graphics framerate.

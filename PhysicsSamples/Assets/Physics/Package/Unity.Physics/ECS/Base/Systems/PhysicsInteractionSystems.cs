@@ -1,6 +1,6 @@
 using Unity.Entities;
 
-namespace Unity.Physics.Systems
+namespace SM.Physics.Systems
 {
     // Represents runtime data of physics (all data stored in PhysicsWorld) - used only to declare reading/writing the data.
     internal struct PhysicsSystemRuntimeData : IComponentData

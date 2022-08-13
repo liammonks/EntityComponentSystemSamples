@@ -1,7 +1,7 @@
 using Unity.Entities;
-using Unity.Physics.Systems;
+using SM.Physics.Systems;
 
-namespace Unity.Physics.GraphicsIntegration
+namespace SM.Physics.GraphicsIntegration
 {
     /// <summary>
     /// A system to keep track of the time values in the most recent tick of the <c>FixedStepSimulationSystemGroup</c>.

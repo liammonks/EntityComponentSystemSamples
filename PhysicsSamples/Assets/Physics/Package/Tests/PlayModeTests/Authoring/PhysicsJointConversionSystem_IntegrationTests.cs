@@ -10,7 +10,7 @@ using LegacyHinge = UnityEngine.HingeJoint;
 using LegacyJoint = UnityEngine.Joint;
 using LegacySpring = UnityEngine.SpringJoint;
 
-namespace Unity.Physics.Tests.Authoring
+namespace SM.Physics.Tests.Authoring
 {
     class PhysicsJointConversionSystem_IntegrationTests : BaseHierarchyConversionTest
     {

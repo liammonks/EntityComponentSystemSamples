@@ -4,7 +4,7 @@ using Unity.Collections.LowLevel.Unsafe;
 using Unity.Entities;
 using Unity.Mathematics;
 
-namespace Unity.Physics.Tests.Dynamics.CollisionEvents
+namespace SM.Physics.Tests.Dynamics.CollisionEvents
 {
     class CollisionEventsTests
     {

@@ -6,10 +6,10 @@ using Unity.Collections;
 using Unity.DataFlowGraph;
 using Unity.Jobs;
 using Unity.Mathematics;
-using Unity.Physics.Tests.Utils;
+using SM.Physics.Tests.Utils;
 using Random = Unity.Mathematics.Random;
 
-namespace Unity.Physics.Tests.DFG
+namespace SM.Physics.Tests.DFG
 {
     internal class ColliderCastNodeTests
     {

@@ -1,7 +1,7 @@
 using System.Runtime.CompilerServices;
 using Unity.Mathematics;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     // Describes how mass is distributed within an object
     // Represented by a transformed box inertia of unit mass.

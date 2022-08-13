@@ -3,10 +3,10 @@ using Unity.Collections;
 using Unity.Entities;
 using Unity.Jobs;
 using Unity.Mathematics;
-using Unity.Physics;
-using Unity.Physics.Systems;
+using SM.Physics;
+using SM.Physics.Systems;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     /// Job which walks the broadphase tree and writes the
     /// bounding box of leaf nodes to a DebugStream.

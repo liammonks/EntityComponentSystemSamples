@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityComponent = UnityEngine.Component;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     struct GetActiveChildrenScope<T> : IDisposable where T : UnityComponent
     {

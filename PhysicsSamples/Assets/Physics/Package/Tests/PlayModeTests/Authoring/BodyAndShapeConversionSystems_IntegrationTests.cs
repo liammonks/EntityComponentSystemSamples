@@ -1,13 +1,13 @@
 using System;
 using System.Linq;
 using NUnit.Framework;
-using Unity.Physics.Authoring;
+using SM.Physics.Authoring;
 using UnityEngine;
 #if LEGACY_PHYSICS
 using LegacyRigidBody = UnityEngine.Rigidbody;
 #endif
 
-namespace Unity.Physics.Tests.Authoring
+namespace SM.Physics.Tests.Authoring
 {
     class BodyAndShapeConversionSystems_IntegrationTests : BaseHierarchyConversionTest
     {

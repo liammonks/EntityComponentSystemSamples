@@ -6,7 +6,7 @@ using Unity.Collections.LowLevel.Unsafe;
 using Unity.Mathematics;
 using Unity.Entities;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     // A flat convex collider with either 3 or 4 coplanar vertices (ie, a triangle or a quad)
     public struct PolygonCollider : IConvexCollider

@@ -2,7 +2,7 @@ using Unity.Collections;
 using Unity.Collections.LowLevel.Unsafe;
 using Unity.Entities;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     // An event raised when a pair of bodies involving a trigger material have overlapped during solving.
     public struct TriggerEvent : ISimulationEvent<TriggerEvent>

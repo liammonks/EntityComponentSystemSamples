@@ -6,7 +6,7 @@ using UnityEditor;
 using UnityEditorInternal;
 using UnityEngine;
 
-namespace Unity.Physics.Editor
+namespace SM.Physics.Editor
 {
     [AttributeUsage(AttributeTargets.Field)]
     sealed class AutoPopulateAttribute : Attribute

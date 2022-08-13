@@ -1,12 +1,12 @@
 using Unity.Burst;
-using Unity.Physics.Systems;
+using SM.Physics.Systems;
 using Unity.Collections;
 using Unity.Entities;
 using Unity.Mathematics;
 using Unity.DebugDisplay;
 using Unity.Jobs;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     [BurstCompile(FloatPrecision.Low, FloatMode.Fast)]
     public struct DisplayColliderEdgesJob : IJob

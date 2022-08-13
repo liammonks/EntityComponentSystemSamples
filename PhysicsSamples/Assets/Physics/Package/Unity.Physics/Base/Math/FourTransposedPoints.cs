@@ -1,7 +1,7 @@
 using System;
 using Unity.Mathematics;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     public static partial class Math
     {

@@ -2,7 +2,7 @@
 using Unity.DataFlowGraph;
 using Unity.Burst;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     /// <summary>
     /// DataFlowGraph node that performs a Ray Cast query on a CollisionWorld.

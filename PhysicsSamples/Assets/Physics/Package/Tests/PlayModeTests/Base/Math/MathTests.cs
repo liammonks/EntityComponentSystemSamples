@@ -4,9 +4,9 @@ using Unity.Burst;
 using Unity.Collections;
 using Unity.Jobs;
 using Unity.Mathematics;
-using static Unity.Physics.Math;
+using static SM.Physics.Math;
 
-namespace Unity.Physics.Tests.Base.Math
+namespace SM.Physics.Tests.Base.Math
 {
     class MathTests
     {

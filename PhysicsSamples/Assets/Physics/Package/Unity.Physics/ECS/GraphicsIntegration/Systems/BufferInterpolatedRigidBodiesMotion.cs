@@ -5,10 +5,10 @@ using Unity.Collections.LowLevel.Unsafe;
 using Unity.Entities;
 using Unity.Jobs;
 using Unity.Mathematics;
-using Unity.Physics.Systems;
+using SM.Physics.Systems;
 using Unity.Transforms;
 
-namespace Unity.Physics.GraphicsIntegration
+namespace SM.Physics.GraphicsIntegration
 {
     /// <summary>
     /// A system that writes to a rigid body's <see cref="PhysicsGraphicalInterpolationBuffer"/> component by copying its <c>Translation</c>, <c>Rotation</c>, and <see cref="PhysicsVelocity"/> before physics steps.

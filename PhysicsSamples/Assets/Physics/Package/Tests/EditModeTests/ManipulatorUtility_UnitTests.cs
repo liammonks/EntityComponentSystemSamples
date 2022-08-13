@@ -1,10 +1,10 @@
 using System.Linq;
 using NUnit.Framework;
 using Unity.Mathematics;
-using Unity.Physics.Editor;
+using SM.Physics.Editor;
 using UnityEngine;
 
-namespace Unity.Physics.Tests.Editor
+namespace SM.Physics.Tests.Editor
 {
     class ManipulatorUtility_UnitTests
     {

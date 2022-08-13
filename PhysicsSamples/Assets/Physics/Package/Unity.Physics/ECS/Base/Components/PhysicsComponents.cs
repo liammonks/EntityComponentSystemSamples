@@ -3,10 +3,10 @@ using Unity.Collections;
 using Unity.Collections.LowLevel.Unsafe;
 using Unity.Entities;
 using Unity.Mathematics;
-using Unity.Physics.Extensions;
+using SM.Physics.Extensions;
 using Unity.Transforms;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     /// <summary>
     /// Add this tag to a body or joint to exclude it from the physics world.

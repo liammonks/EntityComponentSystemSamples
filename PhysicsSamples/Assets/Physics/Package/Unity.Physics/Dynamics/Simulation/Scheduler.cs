@@ -7,7 +7,7 @@ using Unity.Jobs;
 using Unity.Mathematics;
 using UnityEngine.Assertions;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     // Builds phased pairs of interacting bodies, used to parallelize work items during the simulation step.
     public class DispatchPairSequencer : IDisposable

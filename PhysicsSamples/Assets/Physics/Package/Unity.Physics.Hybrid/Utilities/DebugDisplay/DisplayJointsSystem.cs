@@ -1,13 +1,13 @@
 using System;
 using Unity.Burst;
-using Unity.Physics.Systems;
+using SM.Physics.Systems;
 using Unity.Collections;
 using Unity.Entities;
 using Unity.Jobs;
 using Unity.Mathematics;
-using static Unity.Physics.Math;
+using static SM.Physics.Math;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     // Creates DisplayJointsJobs
     [UpdateInGroup(typeof(FixedStepSimulationSystemGroup))]

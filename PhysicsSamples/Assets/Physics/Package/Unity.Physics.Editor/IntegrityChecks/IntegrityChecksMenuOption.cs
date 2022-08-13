@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using UnityEditor;
 
-namespace Unity.Physics.Editor
+namespace SM.Physics.Editor
 {
     static class IntegrityChecksMenuOption
     {

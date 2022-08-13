@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityComponent = UnityEngine.Component;
 using UnityMesh = UnityEngine.Mesh;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     /// <summary>
     /// A structure for storing authoring data for a capsule shape.

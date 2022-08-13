@@ -4,7 +4,7 @@ using Unity.Collections;
 using Unity.Jobs;
 using Unity.Mathematics;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     public static class Integrator
     {

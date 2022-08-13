@@ -7,7 +7,7 @@ using Unity.Entities;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-namespace Unity.Physics.Tests.Authoring
+namespace SM.Physics.Tests.Authoring
 {
     abstract class BaseHierarchyConversionTest
     {

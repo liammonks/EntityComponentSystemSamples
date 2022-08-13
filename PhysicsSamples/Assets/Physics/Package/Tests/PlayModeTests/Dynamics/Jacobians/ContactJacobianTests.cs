@@ -3,7 +3,7 @@ using NUnit.Framework;
 using Unity.Collections;
 using Assert = UnityEngine.Assertions.Assert;
 
-namespace Unity.Physics.Tests.Dynamics.Jacobians
+namespace SM.Physics.Tests.Dynamics.Jacobians
 {
     class ContactJacobiansTests
     {

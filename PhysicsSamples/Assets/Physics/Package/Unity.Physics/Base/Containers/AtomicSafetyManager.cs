@@ -3,7 +3,7 @@ using System.Diagnostics;
 using Unity.Collections;
 using Unity.Collections.LowLevel.Unsafe;
 
-namespace Unity.Physics
+namespace SM.Physics
 {
     struct AtomicSafetyManager : IDisposable
     {

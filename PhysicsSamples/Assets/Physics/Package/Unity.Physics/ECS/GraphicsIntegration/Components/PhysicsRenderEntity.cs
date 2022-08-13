@@ -1,6 +1,6 @@
 using Unity.Entities;
 
-namespace Unity.Physics.GraphicsIntegration
+namespace SM.Physics.GraphicsIntegration
 {
     /// <summary>
     /// Stores a direct association to another Entity holding a graphical representation

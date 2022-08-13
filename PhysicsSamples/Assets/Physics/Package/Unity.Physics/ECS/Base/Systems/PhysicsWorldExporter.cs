@@ -7,7 +7,7 @@ using Unity.Jobs;
 using Unity.Mathematics;
 using Unity.Transforms;
 
-namespace Unity.Physics.Systems
+namespace SM.Physics.Systems
 {
     /// <summary>
     /// Utilities for exporting physics world data to ECS components.

@@ -4,7 +4,7 @@ using Unity.Collections;
 using Unity.Mathematics;
 using Random = Unity.Mathematics.Random;
 
-namespace Unity.Physics.Tests.Collision.Colliders
+namespace SM.Physics.Tests.Collision.Colliders
 {
     /// <summary>
     /// Test class containing tests for the <see cref="MeshCollider"/>

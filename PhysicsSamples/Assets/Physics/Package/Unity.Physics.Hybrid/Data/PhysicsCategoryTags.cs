@@ -1,7 +1,7 @@
 using System;
 using Unity.Mathematics;
 
-namespace Unity.Physics.Authoring
+namespace SM.Physics.Authoring
 {
     [Serializable]
     public struct PhysicsCategoryTags : IEquatable<PhysicsCategoryTags>
